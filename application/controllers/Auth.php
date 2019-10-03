@@ -46,6 +46,7 @@ class Auth extends CI_Controller
 		$this->form_validation->set_message('required', 'Please fill the form %s');
 		if ($this->form_validation->run() == false) {
 			$data['title'] = "Login Page";
+			$data['page'] = "Sistem Login";
 			$data['captcha'] = create_captcha($vals);
 			$this->load->view('layouts/auth_header', $data);
 			$this->load->view('auth/login');

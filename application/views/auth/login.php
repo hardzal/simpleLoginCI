@@ -6,11 +6,12 @@
 		<div class="col-lg-8">
 
 			<div class="card o-hidden border-0 shadow-lg my-5">
-				<div class="card-body p-0">
+				<div class="card-body p-5" style="padding-bottom: 2px !important;">
 					<!-- Nested Row within Card Body -->
 					<div class="row">
-						<div class="col-lg">
-							<div class="pl-5 pr-5 pt-5 pb-0">
+						<div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+						<div class="col-lg-6">
+							<div class="p-5">
 								<div class="text-center">
 									<h1 class="h4 text-gray-900 mb-4">Login Form</h1>
 									<hr class="border-bottom-primary" />
@@ -33,7 +34,7 @@
 										</div>
 										<div class="text-center mb-3">
 											<?= $captcha['image']; ?>
-											<input type="text" name="captcha" />
+											<input type="text" name="captcha" class="mt-3" />
 											<input type="hidden" value="<?php echo $captcha['word'] ?>" name="code">
 										</div>
 									</div>
@@ -45,8 +46,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="text-center">
-						<p>&copy;2019 PT Website</p>
+					<div class="row">
+						<div class="col">
+							<p class="text-center">Copyright &copy;2019</p>
+						</div>
 					</div>
 				</div>
 			</div>

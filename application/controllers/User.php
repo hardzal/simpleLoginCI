@@ -15,6 +15,7 @@ class User extends CI_Controller
 			redirect('admin');
 		}
 		$data['title'] = "User Dashboard";
+		$data['page'] = "Sistem Login";
 		$this->load->view('layouts/admin_header', $data);
 		$this->load->view('layouts/admin_sidebar');
 		$this->load->view('layouts/admin_topbar');
